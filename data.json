@@ -27,6 +27,34 @@
         "html": "<span class=\"ai\">🌅</span>",
         "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sanur Sunrise Beach Viewpoint</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Despite the name, beautiful at any time. Clear views of Nusa\n                  Penida and Mt. Agung. Perfect golden hour shot.</span><span class=\"photo-badge\">📸 Photo: golden hour\n                  Agung reflection</span>"
       }
+    ],
+    "al_6": [
+      {
+        "html": "<span class=\"ai\">🏛️</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Puri Saren Agung – Ubud Palace</strong><div class=\"maps-block\" data-map-id=\"map_al_6_0\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Still-occupied royal palace at the heart of Ubud. Free\n                  entry. Beautiful split gates (candi bentar), carved thrones, frangipani-filled courtyards. Evening\n                  Kecak dance shows here.</span><span class=\"photo-badge\">📸 Golden gates, courtyard\n                  carvings</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🛍️</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Ubud Art Market (Pasar Seni)</strong><div class=\"maps-block\" data-map-id=\"map_al_6_1\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Right opposite the palace. Two floors of batik, carved\n                  wooden masks, rattan bags, silver jewellery, paintings. Bargain hard — start at 30–40% of asking\n                  price.</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🚶</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Jalan Bisma Walk</strong><div class=\"maps-block\" data-map-id=\"map_al_6_2\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Your hotel's street is one of Ubud's most beautiful — a quiet road with rice\n                  terrace views and excellent boutique restaurants. Great evening stroll.</span><span class=\"photo-badge\">📸 Gorge views along Bisma ridge</span>"
+      }
+    ],
+    "al_5": [
+      {
+        "html": "<span class=\"ai\">🥈</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Celuk – Silver &amp; Gold Village</strong><div class=\"maps-block\" data-map-id=\"map_al_5_0\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Bali's jewellery heartland. Watch master silversmiths work\n                  by hand. Excellent place to buy authentic Balinese silver jewellery. Start at smaller workshops on\n                  side streets for better prices.</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🪵</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Mas – Wood Carving Village</strong><div class=\"maps-block\" data-map-id=\"map_al_5_1\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Roadside galleries of intricate handmade Garuda statues,\n                  masks, panels. Great for quality gifts and art.</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🌾</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Tegalalang Rice Terraces</strong><div class=\"maps-block\" data-map-id=\"map_al_5_2\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️ Maps:</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">UNESCO-listed emerald terraced paddies plunging into a\n                  gorge. Swing &amp; zip-line activities available. Arrive 9 AM for best light and fewer\n                  people.</span><span class=\"photo-badge\">📸 Iconic Bali rice terrace, gorge shots</span>"
+      }
     ]
   },
   "notes": [
@@ -56,14 +84,27 @@
       "r_9": "Beachfront daybeds, pool, fresh seafood.\n              Grilled fish platters, nasi goreng &amp; coconut mojitos. Mid-range.",
       "r_13": "Chilled garden setting, live music evenings,\n              great grilled meats and Indonesian fare. Very popular with families.",
       "r_11": "Local warung near main village. Grilled fish\n              of the day, Indonesian sides. Very affordable.",
-      "r_15": "Beloved local spot for Balinese duck (bebek\n              betutu) and babi guling (suckling pig). Must try authentic Balinese flavours. Book ahead."
+      "r_15": "Beloved local spot for Balinese duck (bebek\n              betutu) and babi guling (suckling pig). Must try authentic Balinese flavours. Book ahead.",
+      "r_25": "4.9 ★ with 16,000+ reviews. Build-your-own\n              Balinese rice bowl or choose from set bowls. Jackfruit, duck, rendang options. Jl. Goutama No.2. Excellent\n              value, stunning presentation. A must."
     },
     "transport": {
-      "t_4": "<strong>Walking Day + 1 Hired Car for Afternoon</strong>\n          Morning is all walkable from your Bisma villa. Campuhan Ridge Walk starts 10 min walk from the villa.\n          Afternoon: hire a driver (IDR 200–300k half day) for Tanah Lot sunset. Or take Grab to specific spots.\n        "
+      "t_4": "<strong>Walking Day + 1 Hired Car for Afternoon</strong>\n          Morning is all walkable from your Bisma villa. Campuhan Ridge Walk starts 10 min walk from the villa.\n          Afternoon: hire a driver (IDR 200–300k half day) for Tanah Lot sunset. Or take Grab to specific spots.\n        ",
+      "t_0": "<strong>Transport</strong>\n          Airport → Sanur: Pre-book a private cab or use Bluebird taxi (metered, most reliable). ~30–40 min, ~IDR\n          150–200k. Avoid touts inside arrivals. All Sanur activities are walkable along the 5 km beach boardwalk. Rent\n          bicycles (IDR 50k/day) from your hotel for easy exploration.\n        "
+    },
+    "list_al_5": {
+      "desc_1": "Roadside galleries of intricate handmade Garuda statues,\n                  masks, panels. Great for quality gifts and art.",
+      "title_1": "Mas – Wood Carving Village"
+    },
+    "list_al_6": {
+      "desc_1": "Right opposite the palace. Two floors of batik, carved\n                  wooden masks, rattan bags, silver jewellery, paintings. Bargain hard — start at 30–40% of asking\n                  price."
+    },
+    "tipbox": {
+      "tip_0": "\n        <strong>📍 Arrival Note</strong>\n        Check in, freshen up. Sanur is the perfect relaxed entry into Bali — calm beach, no surf crowds, great food. The\n        famous 5 km beachfront boardwalk links everythinng."
     }
   },
   "mapLinks": {
     "day23": "",
-    "day27": ""
+    "day27": "",
+    "map_al_5_0": ""
   }
 }
