@@ -955,7 +955,7 @@
         <div class="day-title-block">
           <h2>Arrival in Sanur</h2>
           <div class="maps-block" data-day-id="day23">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1020,8 +1020,9 @@
               Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu
               No.42</div>
           </div>
-
-          <div class="card-label dinner" style="margin-top:18px">🌙 Dinner – Food Street Exploration</div>
+        </div>
+        <div class="card">
+          <div class="card-label dinner">🌙 Dinner – Food Street Exploration</div>
           <div class="restaurant-item">
             <div class="r-name" contenteditable="true" spellcheck="false">🦞 Warung Be Sanur</div>
             <div class="r-detail" contenteditable="true" spellcheck="false">Offshoot of Mak Beng, slightly different
@@ -1050,7 +1051,7 @@
         <div class="day-title-block">
           <h2>Nusa Lembongan Island</h2>
           <div class="maps-block" data-day-id="day24">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1151,7 +1152,7 @@
         <div class="day-title-block">
           <h2>East Bali – Royal Water Palaces &amp; Sacred Peaks</h2>
           <div class="maps-block" data-day-id="day25">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1254,7 +1255,7 @@
         <div class="day-title-block">
           <h2>Sanur → Ubud via Sightseeing</h2>
           <div class="maps-block" data-day-id="day26">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1355,7 +1356,7 @@
         <div class="day-title-block">
           <h2>Ubud Deep Dive – Temples, Walks &amp; Markets</h2>
           <div class="maps-block" data-day-id="day27">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1454,7 +1455,7 @@
         <div class="day-title-block">
           <h2>Ubud → Nusa Dua via UNESCO Terraces</h2>
           <div class="maps-block" data-day-id="day28">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1543,7 +1544,7 @@
         <div class="day-title-block">
           <h2>Nusa Dua – Beach, Culture &amp; GWK</h2>
           <div class="maps-block" data-day-id="day29">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -1641,7 +1642,7 @@
         <div class="day-title-block">
           <h2>Last Full Day – Spa, Surf &amp; Sunset</h2>
           <div class="maps-block" data-day-id="day30">
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           </div>
@@ -2166,13 +2167,14 @@
           mapsBlock.className = 'maps-block';
           mapsBlock.dataset.mapId = 'map_' + listId + '_' + i;
           mapsBlock.innerHTML = `
-            <span class="maps-label">🗺️ Maps:</span>
+            <span class="maps-label">🗺️</span>
             <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
             <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
           `;
           const strong = li.querySelector('.at strong');
           if (strong) {
             strong.after(mapsBlock);
+            mapsBlock.insertAdjacentHTML('afterend', '<br>');
           }
         }
       });
@@ -2261,11 +2263,12 @@
         mapsBlock.className = 'maps-block';
         mapsBlock.dataset.mapId = 'map_' + listId + '_' + Date.now();
         mapsBlock.innerHTML = `
-          <span class="maps-label">🗺️ Maps:</span>
+          <span class="maps-label">🗺️</span>
           <a href="#" class="maps-link placeholder" target="_blank">Add Map Link</a>
           <button class="maps-edit-btn" title="Edit Map Link">✏️</button>
         `;
         li.querySelector('.at strong').after(mapsBlock);
+        mapsBlock.insertAdjacentHTML('afterend', '<br>');
 
         bindDrag(li);
         persistList(ul);
