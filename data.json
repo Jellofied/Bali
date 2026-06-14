@@ -1,9 +1,21 @@
 {
   "activities": {},
-  "notes": [],
+  "notes": [
+    {
+      "id": 0,
+      "x": -139,
+      "y": 851,
+      "text": "hello hello hello test\n",
+      "pageId": "day23",
+      "version": 2
+    }
+  ],
   "textEdits": {
     "list_al_3": {
       "title_0": "no Temple needed"
+    },
+    "list_al_0": {
+      "title_0": "Sanur Beachfront Boardwalk"
     }
   }
 }
