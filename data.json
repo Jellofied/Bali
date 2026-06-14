@@ -9,6 +9,24 @@
         "html": "<span class=\"ai\">💦</span>",
         "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Tirta Gangga Water Palace</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Former royal water palace with elegant stepped pools, giant\n                  koi fish, stone stepping paths, and lush gardens against a highland backdrop. Entry IDR 90k. You can\n                  swim in the bathing pools.</span><span class=\"photo-badge\">📸 Stepping stones, lotus pools, Agung\n                  backdrop</span>"
       }
+    ],
+    "al_0": [
+      {
+        "html": "<span class=\"ai\">🚶</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sanur Beachfront Boardwalk</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">5 km paved path lined with colourful jukung boats — Bali's\n                  most photogenic fishing boats. Walk north toward Sunrise Beach area.</span><span class=\"photo-badge\">📸 Photo: boats against Agung volcano backdrop</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🛕</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Pura Blanjong Temple</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Oldest dated inscription in Bali (914 AD). Small, serene, very local — just 10 min\n                  walk inland from beach.</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🪁</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sindhu Beach Market</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">A small afternoon market near Jl. Danau Tamblingan selling local snacks, fresh\n                  coconut, batik wraps. Great intro to local life.</span><span class=\"photo-badge\">📸 Photo: colourful\n                  offerings &amp; daily life</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🌅</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sanur Sunrise Beach Viewpoint</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Despite the name, beautiful at any time. Clear views of Nusa\n                  Penida and Mt. Agung. Perfect golden hour shot.</span><span class=\"photo-badge\">📸 Photo: golden hour\n                  Agung reflection</span>"
+      }
     ]
   },
   "notes": [
@@ -32,7 +50,16 @@
     "restaurants": {
       "r_6": "🌃 Jl. Danau Tamblingan Night Walk",
       "r_5": "Offshoot of Mak Beng, slightly different\n              spice. Order the grilled fish, chicken satay &amp; Balinese black rice pudding for dessert.",
-      "r_2": "🔄 Alternative: Moreno Beach Bali"
+      "r_2": "🔄 Alternative: Moreno Beach Bali",
+      "r_3": "Italian-Indonesian fusion right on the sand.\n              Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu\n              No.42",
+      "r_1": "Bali's most legendary warung. Only one menu\n              — crispy fried fish, spicy fish soup, sambal &amp; rice. IDR 55k/person. Queue expected; arrive by 12:30\n              or after 2 PM. Jl. Hang Tuah No.45",
+      "r_9": "Beachfront daybeds, pool, fresh seafood.\n              Grilled fish platters, nasi goreng &amp; coconut mojitos. Mid-range.",
+      "r_13": "Chilled garden setting, live music evenings,\n              great grilled meats and Indonesian fare. Very popular with families.",
+      "r_11": "Local warung near main village. Grilled fish\n              of the day, Indonesian sides. Very affordable.",
+      "r_15": "Beloved local spot for Balinese duck (bebek\n              betutu) and babi guling (suckling pig). Must try authentic Balinese flavours. Book ahead."
+    },
+    "transport": {
+      "t_4": "<strong>Walking Day + 1 Hired Car for Afternoon</strong>\n          Morning is all walkable from your Bisma villa. Campuhan Ridge Walk starts 10 min walk from the villa.\n          Afternoon: hire a driver (IDR 200–300k half day) for Tanah Lot sunset. Or take Grab to specific spots.\n        "
     }
   },
   "mapLinks": {
