@@ -2053,10 +2053,7 @@
     ───────────────────────────────────────────── */
     const DRAFT_KEY = 'bali_itinerary_draft';
 
-    function getDefaultToken() {
-      const rev = "atEcuclRYGUAGRNUIWXTuGJq8jVUG9P787DM3A6OFRwTGZFTBmtEAwmm7zr_kKmOvvmt5sFw0I7XJDJB11_tap_buhtig";
-      return rev.split("").reverse().join("");
-    }
+
 
     let state = { activities: {}, notes: [], textEdits: {}, mapLinks: {} };
     let noteIdCounter = 0;
@@ -2612,7 +2609,7 @@
       if (settingsBtn) {
         settingsBtn.addEventListener('click', () => {
           // Pre-fill fields from localStorage
-          tokenInput.value = localStorage.getItem('gh_pat_token') || getDefaultToken();
+          tokenInput.value = localStorage.getItem('gh_pat_token') || '';
           repoInput.value = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
           branchInput.value = localStorage.getItem('gh_pat_branch') || 'main';
           modal.style.display = 'flex';
@@ -2653,7 +2650,7 @@
       const branchInput = document.getElementById('gh-branch');
 
       if (modal) {
-        tokenInput.value = localStorage.getItem('gh_pat_token') || getDefaultToken();
+        tokenInput.value = localStorage.getItem('gh_pat_token') || '';
         repoInput.value = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
         branchInput.value = localStorage.getItem('gh_pat_branch') || 'main';
         modal.style.display = 'flex';
@@ -2696,7 +2693,7 @@
         }
       } else {
         // Remote Mode: save via GitHub API commit
-        const token = localStorage.getItem('gh_pat_token') || getDefaultToken();
+        const token = localStorage.getItem('gh_pat_token');
         const repo = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
         const branch = localStorage.getItem('gh_pat_branch') || 'main';
 
