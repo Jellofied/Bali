@@ -6,12 +6,13 @@
       "title_0": "no Temple needed"
     },
     "list_al_0": {
-      "title_0": "Sanur Beachfront Boardwalk",
-      "desc_0": "5 km paved path lined with colourful jukung boats — Bali's\n                  most photogenic fishing boats. Walk north toward Sunrise Beach area.",
-      "desc_2": "A small afternoon market near Jl. Danau Tamblingan selling local snacks, fresh\n                  coconut, batik wraps. Great intro to local life."
+      "title_0": "Sanur Beachfront Boardwalk"
     },
     "transport": {
       "t_0": "<strong>Transport</strong>\n          Airport → Sanur: Pre-book a private cab or use Bluebird taxi (metered, most reliable). ~30–40 min, ~IDR\n          150–200k. Avoid touts inside arrivals. All Sanur activities are walkable along the 5 km beach boardwalk. Rent\n          bicycles (IDR 50k/day) from your hotel for easy exploration.\n        "
+    },
+    "tipbox": {
+      "tip_0": "\n        <strong>📍 Arrival Note</strong>\n        Check in, freshen up. Sanur is the perfect relaxed entry into Bali — calm beach, no surf crowds, great food. The\n        famous 5 km beachfront boardwalk links everything.\n      "
     }
   },
   "mapLinks": {}
