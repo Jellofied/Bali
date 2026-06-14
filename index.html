@@ -4,7 +4,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bali Family Itinerary – 8 Days</title>
-<link href="./Bali Family Itinerary edited– 8 Days_files/css2" rel="stylesheet">
+<link href="./assets/css2" rel="stylesheet">
 <style>
   :root {
     --gold: #C9A84C;
@@ -655,6 +655,34 @@
       width: 180px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
+  /* ── TOAST NOTIFICATION ── */
+  .toast {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 10001;
+    transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .toast.show {
+    top: 24px;
+    opacity: 1;
+  }
+  .toast.error {
+    background: #c33;
   }
 
 </style>
@@ -1347,13 +1375,36 @@
     </div>
     <span class="db-status-text" id="db-status-text">Connecting...</span>
   </div>
-  <div class="db-actions">
-    <button class="db-btn" id="db-export-btn" title="Export database state as a JSON file">📥 Export</button>
-    <button class="db-btn" id="db-import-btn" title="Import database state from a JSON file">📤 Import</button>
-    <button class="db-btn danger" id="db-reset-btn" title="Reset all changes back to default">🔄 Reset</button>
+  <div class="db-actions" style="display: flex; gap: 6px;">
+    <button class="db-btn" id="db-save-btn" style="flex: 4; background: var(--green); color: white; border-color: var(--green); border-radius: 6px;" title="Save all changes back to data.json">💾 Save Changes</button>
+    <button class="db-btn" id="db-settings-btn" style="flex: 1; border-radius: 6px;" title="Configure GitHub Sync Settings">⚙️</button>
   </div>
-  <input type="file" id="db-import-file" accept=".json" style="display: none;">
 </div>
+
+<!-- GitHub Configuration Modal -->
+<div id="github-config-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10000; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
+  <div style="background: white; border-radius: 12px; padding: 24px; width: 360px; box-shadow: 0 8px 32px rgba(0,0,0,0.25); font-family: 'Source Sans 3', sans-serif;">
+    <h3 style="margin-bottom: 12px; color: var(--green); font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600;">GitHub Pages Sync</h3>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.4;">Configure your credentials so edits made on this website can update the global <code style="background:var(--sand);padding:2px 4px;border-radius:3px;">data.json</code> file.</p>
+    
+    <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--text);">GitHub Personal Access Token (PAT):</label>
+    <input type="password" id="gh-token" placeholder="ghp_..." style="width: 100%; padding: 8px 10px; border: 1px solid var(--sand-dark); border-radius: 6px; margin-bottom: 12px; font-size: 13px; outline: none; box-sizing: border-box;">
+    
+    <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--text);">Repository Path:</label>
+    <input type="text" id="gh-repo" placeholder="username/repository" style="width: 100%; padding: 8px 10px; border: 1px solid var(--sand-dark); border-radius: 6px; margin-bottom: 12px; font-size: 13px; outline: none; box-sizing: border-box;">
+    
+    <label style="display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--text);">Branch Name:</label>
+    <input type="text" id="gh-branch" placeholder="main" style="width: 100%; padding: 8px 10px; border: 1px solid var(--sand-dark); border-radius: 6px; margin-bottom: 20px; font-size: 13px; outline: none; box-sizing: border-box;">
+    
+    <div style="display: flex; gap: 8px; justify-content: flex-end;">
+      <button id="gh-cancel-btn" style="background: none; border: 1px solid var(--sand-dark); border-radius: 6px; padding: 8px 12px; font-size: 13px; cursor: pointer; color: var(--text-muted);">Cancel</button>
+      <button id="gh-save-btn" style="background: var(--green); color: white; border: none; border-radius: 6px; padding: 8px 12px; font-size: 13px; font-weight: 600; cursor: pointer;">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notifications -->
+<div id="toast-notif" class="toast"></div>
 
 <script>
 /* ─────────────────────────────────────────────
@@ -1372,18 +1423,24 @@ function showDay(id) {
 }
 
 /* ─────────────────────────────────────────────
-   STORAGE & DATABASE HELPERS (IndexedDB)
+   STORAGE & DATABASE HELPERS (JSON File + GitHub API)
 ───────────────────────────────────────────── */
-const STORAGE_KEY = 'bali_itinerary_v1';
-const DB_NAME = 'BaliItineraryDB';
-const DB_VERSION = 1;
-const STORE_NAME = 'itinerary_store';
-const RECORD_KEY = 'itinerary_state';
+const DRAFT_KEY = 'bali_itinerary_draft';
 
-let db = null;
 let state = { activities: {}, notes: [], textEdits: {} };
 let noteIdCounter = 0;
-let saveTimeout = null;
+let toastTimeout = null;
+
+function showToast(message, isError = false) {
+  const toast = document.getElementById('toast-notif');
+  if (!toast) return;
+  toast.textContent = message;
+  toast.className = 'toast show' + (isError ? ' error' : '');
+  if (toastTimeout) clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.className = 'toast';
+  }, 4500);
+}
 
 function updateStatus(status) {
   const dot = document.getElementById('db-status-dot');
@@ -1391,83 +1448,41 @@ function updateStatus(status) {
   if (!dot || !text) return;
   
   dot.className = 'db-status-dot';
+  dot.style.background = '';
+  dot.style.boxShadow = '';
+  
   if (status === 'connecting') {
     text.textContent = 'Connecting...';
-  } else if (status === 'connected') {
-    dot.classList.add('connected');
-    text.textContent = 'Database Connected';
+  } else if (status === 'draft') {
+    dot.classList.add('saving'); 
+    dot.style.background = '#FFCC00';
+    dot.style.boxShadow = '0 0 8px #FFCC00';
+    text.textContent = 'Unsaved Changes';
   } else if (status === 'saving') {
-    dot.classList.add('saving');
+    dot.classList.add('saving'); 
+    dot.style.background = 'var(--coral)';
+    dot.style.boxShadow = '0 0 8px var(--coral)';
     text.textContent = 'Saving Changes...';
-  } else if (status === 'saved') {
-    dot.classList.add('connected');
-    text.textContent = 'All Changes Saved';
+  } else if (status === 'synced') {
+    dot.classList.add('connected'); 
+    dot.style.background = '#2D5E40';
+    dot.style.boxShadow = '0 0 8px #2D5E40';
+    text.textContent = 'Saved to File';
   } else if (status === 'error') {
-    dot.classList.add('error');
-    text.textContent = 'Database Error';
+    dot.classList.add('error'); 
+    dot.style.background = '#c33';
+    dot.style.boxShadow = '0 0 8px #c33';
+    text.textContent = 'Save Error';
   }
 }
 
-function initDB() {
-  return new Promise((resolve, reject) => {
-    const request = indexedDB.open(DB_NAME, DB_VERSION);
-    request.onupgradeneeded = (e) => {
-      const dbInstance = e.target.result;
-      if (!dbInstance.objectStoreNames.contains(STORE_NAME)) {
-        dbInstance.createObjectStore(STORE_NAME);
-      }
-    };
-    request.onsuccess = (e) => {
-      db = e.target.result;
-      resolve(db);
-    };
-    request.onerror = (e) => reject(e.target.error);
-  });
-}
-
-function saveStateToIndexedDB(stateObj) {
-  return new Promise((resolve, reject) => {
-    if (!db) return reject(new Error('Database not initialized'));
-    const transaction = db.transaction([STORE_NAME], 'readwrite');
-    const store = transaction.objectStore(STORE_NAME);
-    const request = store.put(stateObj, RECORD_KEY);
-    request.onsuccess = () => resolve();
-    request.onerror = (e) => reject(e.target.error);
-  });
-}
-
-function getStateFromIndexedDB() {
-  return new Promise((resolve, reject) => {
-    if (!db) return reject(new Error('Database not initialized'));
-    const transaction = db.transaction([STORE_NAME], 'readonly');
-    const store = transaction.objectStore(STORE_NAME);
-    const request = store.get(RECORD_KEY);
-    request.onsuccess = (e) => resolve(e.target.result || null);
-    request.onerror = (e) => reject(e.target.error);
-  });
-}
-
-// Global saveState proxy to interface with existing event listeners
+// saveState is triggered by edit listeners to preserve local drafts
 function saveState(stateObj, debounceMs = 0) {
-  updateStatus('saving');
-  if (saveTimeout) clearTimeout(saveTimeout);
-  
-  if (debounceMs > 0) {
-    saveTimeout = setTimeout(async () => {
-      await writeStateToDB();
-    }, debounceMs);
-  } else {
-    writeStateToDB();
-  }
-}
-
-async function writeStateToDB() {
   try {
-    await saveStateToIndexedDB(state);
-    updateStatus('saved');
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(state));
+    updateStatus('draft');
   } catch (err) {
-    console.error('Failed to save state to IndexedDB:', err);
-    updateStatus('error');
+    console.error('Failed to save local draft:', err);
   }
 }
 
@@ -1810,154 +1825,251 @@ document.addEventListener('keydown', e => {
 });
 
 /* ─────────────────────────────────────────────
-   ASYNCHRONOUS INITIALIZATION
+   ASYNCHRONOUS INITIALIZATION & SYNC
 ───────────────────────────────────────────── */
 async function initApp() {
+  updateStatus('connecting');
+  
+  // 1. Fetch data.json from server
+  let serverState = null;
   try {
-    updateStatus('connecting');
-    await initDB();
-    
-    // Load state
-    let dbState = await getStateFromIndexedDB();
-    if (dbState) {
-      state = dbState;
-    } else {
-      // Try local storage migration
-      try {
-        const localData = localStorage.getItem(STORAGE_KEY);
-        if (localData) {
-          state = JSON.parse(localData) || {};
-          await saveStateToIndexedDB(state);
-          localStorage.removeItem(STORAGE_KEY);
-          console.log('Migrated data from localStorage to IndexedDB.');
-        }
-      } catch (e) {
-        console.warn('LocalStorage access or migration failed:', e);
-      }
-    }
-    
-    if (!state.activities) state.activities = {};
-    if (!state.notes) state.notes = [];
-    if (!state.textEdits) state.textEdits = {};
-    
-    // Migrate old test notes to the new center-aligned coordinate system
-    state.notes.forEach(n => { 
-      if (!n.pageId) n.pageId = 'day23'; 
-      if (n.version !== 2) {
-         const oldCenterX = document.documentElement.clientWidth / 2;
-         n.x = (n.x + 18) - oldCenterX; 
-         n.y = (n.y + 18) + (window.scrollY || 0); 
-         n.version = 2;
-      }
-    });
-    
-    // Ensure DB is up to date with any migrated or format-updated notes
-    await saveStateToIndexedDB(state);
-    
-    noteIdCounter = state.notes.length > 0 ? Math.max(...state.notes.map(n => n.id)) + 1 : 0;
-    updateStatus('connected');
-    
-  } catch (err) {
-    console.error('Failed to initialize database:', err);
-    updateStatus('error');
-    noteIdCounter = state.notes.length > 0 ? Math.max(...state.notes.map(n => n.id)) + 1 : 0;
+    const res = await fetch('data.json');
+    if (res.ok) serverState = await res.json();
+  } catch (e) {
+    console.warn('Failed to load data.json from host:', e);
   }
   
-  // Initialize editable elements and activity lists
+  // 2. Fetch local draft if any
+  let localDraft = null;
+  try {
+    localDraft = JSON.parse(localStorage.getItem(DRAFT_KEY));
+  } catch (e) {}
+  
+  if (localDraft) {
+    state = localDraft;
+    updateStatus('draft');
+    showToast('Loaded unsaved changes from browser draft');
+  } else if (serverState) {
+    state = serverState;
+    updateStatus('synced');
+  } else {
+    state = { activities: {}, notes: [], textEdits: {} };
+    updateStatus('synced');
+  }
+  
+  if (!state.activities) state.activities = {};
+  if (!state.notes) state.notes = [];
+  if (!state.textEdits) state.textEdits = {};
+  
+  // Migrate old test notes to the new center-aligned coordinate system
+  state.notes.forEach(n => { 
+    if (!n.pageId) n.pageId = 'day23'; 
+    if (n.version !== 2) {
+       const oldCenterX = document.documentElement.clientWidth / 2;
+       n.x = (n.x + 18) - oldCenterX; 
+       n.y = (n.y + 18) + (window.scrollY || 0); 
+       n.version = 2;
+    }
+  });
+  
+  noteIdCounter = state.notes.length > 0 ? Math.max(...state.notes.map(n => n.id)) + 1 : 0;
+  
+  // 3. Initialize editable elements and activity lists
   document.querySelectorAll('.activity-list').forEach((ul, i) => {
     ul.dataset.listId = `al_${i}`;
     initActivityList(ul);
   });
 
-  /* Make restaurant names & details editable too */
   document.querySelectorAll('.r-name, .r-detail').forEach((el, i) => {
     makeEditable(el, 'restaurants', `r_${i}`);
   });
 
-  /* Make transport bar text editable */
   document.querySelectorAll('.transport-bar div').forEach((el, i) => {
     makeEditable(el, 'transport', `t_${i}`);
   });
 
-  /* Make tip box text editable */
   document.querySelectorAll('.tip-box').forEach((el, i) => {
     makeEditable(el, 'tipbox', `tip_${i}`);
   });
 
-  // Restore saved notes for initial page
   renderNotesForPage();
   
-  // Bind database control events
-  bindDBControlEvents();
+  // Bind controls
+  bindControls();
 }
 
-function bindDBControlEvents() {
-  const exportBtn = document.getElementById('db-export-btn');
-  const importBtn = document.getElementById('db-import-btn');
-  const importFile = document.getElementById('db-import-file');
-  const resetBtn = document.getElementById('db-reset-btn');
+function bindControls() {
+  const saveBtn = document.getElementById('db-save-btn');
+  const settingsBtn = document.getElementById('db-settings-btn');
   
-  if (exportBtn) {
-    exportBtn.addEventListener('click', () => {
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(state, null, 2));
-      const downloadAnchor = document.createElement('a');
-      downloadAnchor.setAttribute("href", dataStr);
-      downloadAnchor.setAttribute("download", "bali_itinerary_backup.json");
-      document.body.appendChild(downloadAnchor);
-      downloadAnchor.click();
-      downloadAnchor.remove();
+  const modal = document.getElementById('github-config-modal');
+  const cancelBtn = document.getElementById('gh-cancel-btn');
+  const modalSaveBtn = document.getElementById('gh-save-btn');
+  
+  const tokenInput = document.getElementById('gh-token');
+  const repoInput = document.getElementById('gh-repo');
+  const branchInput = document.getElementById('gh-branch');
+  
+  if (saveBtn) {
+    saveBtn.addEventListener('click', saveChangesToServer);
+  }
+  
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', () => {
+      // Pre-fill fields from localStorage
+      tokenInput.value = localStorage.getItem('gh_pat_token') || '';
+      repoInput.value = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
+      branchInput.value = localStorage.getItem('gh_pat_branch') || 'main';
+      modal.style.display = 'flex';
     });
   }
   
-  if (importBtn && importFile) {
-    importBtn.addEventListener('click', () => {
-      importFile.click();
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
     });
-    
-    importFile.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
+  }
+  
+  if (modalSaveBtn) {
+    modalSaveBtn.addEventListener('click', () => {
+      const token = tokenInput.value.trim();
+      const repo = repoInput.value.trim();
+      const branch = branchInput.value.trim() || 'main';
       
-      const reader = new FileReader();
-      reader.onload = async (evt) => {
-        try {
-          const importedState = JSON.parse(evt.target.result);
-          if (importedState && typeof importedState === 'object') {
-            state = importedState;
-            // Validate basic structure
-            if (!state.activities) state.activities = {};
-            if (!state.notes) state.notes = [];
-            if (!state.textEdits) state.textEdits = {};
-            
-            // Save to DB and reload page to reflect changes
-            await writeStateToDB();
-            alert('Itinerary backup imported successfully! Reloading...');
-            window.location.reload();
-          } else {
-            alert('Invalid backup file structure.');
-          }
-        } catch (err) {
-          alert('Error parsing backup file: ' + err.message);
-        }
-      };
-      reader.readAsText(file);
+      if (!token || !repo) {
+        alert('Please fill out the GitHub Token and Repository fields.');
+        return;
+      }
+      
+      localStorage.setItem('gh_pat_token', token);
+      localStorage.setItem('gh_pat_repo', repo);
+      localStorage.setItem('gh_pat_branch', branch);
+      
+      modal.style.display = 'none';
+      showToast('GitHub Sync Configured!');
     });
   }
+}
+
+function openGitHubConfigModal() {
+  const modal = document.getElementById('github-config-modal');
+  const tokenInput = document.getElementById('gh-token');
+  const repoInput = document.getElementById('gh-repo');
+  const branchInput = document.getElementById('gh-branch');
   
-  if (resetBtn) {
-    resetBtn.addEventListener('click', async () => {
-      if (confirm('Are you sure you want to reset all edits? This will restore the original itinerary and delete all custom notes and modifications.')) {
-        try {
-          state = { activities: {}, notes: [], textEdits: {} };
-          await writeStateToDB();
-          localStorage.removeItem(STORAGE_KEY);
-          alert('Itinerary reset to default! Reloading...');
-          window.location.reload();
-        } catch (err) {
-          alert('Failed to reset: ' + err.message);
+  if (modal) {
+    tokenInput.value = localStorage.getItem('gh_pat_token') || '';
+    repoInput.value = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
+    branchInput.value = localStorage.getItem('gh_pat_branch') || 'main';
+    modal.style.display = 'flex';
+  }
+}
+
+async function saveChangesToServer() {
+  updateStatus('saving');
+  
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  
+  if (isLocal) {
+    // Local Mode: save via /api/save Express endpoint
+    try {
+      const response = await fetch('/api/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(state)
+      });
+      
+      if (response.ok) {
+        const resData = await response.json();
+        if (resData.status === 'success') {
+          localStorage.removeItem(DRAFT_KEY);
+          updateStatus('synced');
+          showToast('Changes saved successfully to data.json on disk!');
+        } else {
+          throw new Error(resData.message);
         }
+      } else {
+        throw new Error(`HTTP ${response.status}`);
       }
-    });
+    } catch (err) {
+      console.error('Failed to save locally:', err);
+      updateStatus('error');
+      showToast('Failed to save to disk: ' + err.message, true);
+    }
+  } else {
+    // Remote Mode: save via GitHub API commit
+    const token = localStorage.getItem('gh_pat_token');
+    const repo = localStorage.getItem('gh_pat_repo') || 'Jellofied/Bali';
+    const branch = localStorage.getItem('gh_pat_branch') || 'main';
+    
+    if (!token) {
+      openGitHubConfigModal();
+      updateStatus('draft');
+      return;
+    }
+    
+    try {
+      // 1. Get SHA of existing data.json in the repository
+      const getUrl = `https://api.github.com/repos/${repo}/contents/data.json?ref=${branch}`;
+      const getRes = await fetch(getUrl, {
+        headers: {
+          'Authorization': `token ${token}`,
+          'Accept': 'application/vnd.github.v3+json'
+        }
+      });
+      
+      let sha = '';
+      if (getRes.status === 200) {
+        const fileData = await getRes.json();
+        sha = fileData.sha;
+      } else if (getRes.status !== 404) {
+        throw new Error(`Failed to fetch file metadata from GitHub (status ${getRes.status})`);
+      }
+      
+      // 2. Commit updated data.json
+      const putUrl = `https://api.github.com/repos/${repo}/contents/data.json`;
+      
+      // Handle base64 encoding correctly supporting utf-8 characters
+      const jsonString = JSON.stringify(state, null, 2);
+      const utf8Bytes = new TextEncoder().encode(jsonString);
+      let binString = "";
+      for (let i = 0; i < utf8Bytes.length; i++) {
+        binString += String.fromCharCode(utf8Bytes[i]);
+      }
+      const contentBase64 = btoa(binString);
+      
+      const putBody = {
+        message: 'update: itinerary data.json via website editor',
+        content: contentBase64,
+        branch: branch
+      };
+      if (sha) putBody.sha = sha;
+      
+      const putRes = await fetch(putUrl, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${token}`,
+          'Content-Type': 'application/json',
+          'Accept': 'application/vnd.github.v3+json'
+        },
+        body: JSON.stringify(putBody)
+      });
+      
+      if (putRes.status === 200 || putRes.status === 201) {
+        localStorage.removeItem(DRAFT_KEY);
+        updateStatus('synced');
+        showToast('Committed successfully! GitHub Pages will rebuild shortly (60s).');
+      } else {
+        const errData = await putRes.json();
+        throw new Error(errData.message || `HTTP ${putRes.status}`);
+      }
+    } catch (err) {
+      console.error('Failed to commit to GitHub:', err);
+      updateStatus('error');
+      showToast('GitHub push failed: ' + err.message, true);
+    }
   }
 }
 
