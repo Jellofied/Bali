@@ -1,33 +1,25 @@
 {
-  "activities": {
-    "al_3": [
-      {
-        "html": "<span class=\"ai\">🚪</span>",
-        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">no Temple needed</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Bali's most photographed temple gate\n                  with Mt. Agung framed perfectly between split gates. Entry ~IDR 100k. The \"floating\" reflection is\n                  done with a mirror/water held under the gate by attendants.</span><span class=\"photo-badge\">📸 #1 Most\n                  iconic Bali photo</span>"
-      },
-      {
-        "html": "<span class=\"ai\">💦</span>",
-        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Tirta Gangga Water Palace</strong><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Former royal water palace with elegant stepped pools, giant\n                  koi fish, stone stepping paths, and lush gardens against a highland backdrop. Entry IDR 90k. You can\n                  swim in the bathing pools.</span><span class=\"photo-badge\">📸 Stepping stones, lotus pools, Agung\n                  backdrop</span>"
-      }
-    ]
-  },
-  "notes": [],
+  "activities": {},
+  "notes": [
+    {
+      "id": 0,
+      "x": -139,
+      "y": 851,
+      "text": "hello hello hello test\n",
+      "pageId": "day23",
+      "version": 2
+    }
+  ],
   "textEdits": {
     "list_al_3": {
-      "title_0": "no Temple needed",
-      "title_2": "New activity"
+      "title_0": "no Temple needed"
     },
     "list_al_0": {
       "title_0": "Sanur Beachfront Boardwalk"
     },
-    "restaurants": {
-      "r_6": "🌃 Jl. Danau Tamblingan Night Walk",
-      "r_5": "Offshoot of Mak Beng, slightly different\n              spice. Order the grilled fish, chicken satay &amp; Balinese black rice pudding for dessert.",
-      "r_2": "🔄 Alternative: Moreno Beach Bali"
+    "transport": {
+      "t_0": "<strong>Transport</strong>\n          Airport → Sanur: Pre-book a private cab or use Bluebird taxi (metered, most reliable). ~30–40 min, ~IDR\n          150–200k. Avoid touts inside arrivals. All Sanur activities are walkable along the 5 km beach boardwalk. Rent\n          bicycles (IDR 50k/day) from your hotel for easy exploration.\n        "
     }
   },
-  "mapLinks": {
-    "day23": "",
-    "day27": ""
-  }
+  "mapLinks": {}
 }
