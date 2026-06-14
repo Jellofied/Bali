@@ -2135,7 +2135,7 @@
         ul.innerHTML = '';
         state.activities[listId].forEach(item => {
           const li = document.createElement('li');
-          li.innerHTML = \`<span class="drag-handle">⠿</span>\` + item.html + \`<span class="at">\` + item.atHtml + \`</span><button class="delete-btn" title="Remove">✕</button>\`;
+          li.innerHTML = `<span class="drag-handle">⠿</span>` + item.html + `<span class="at">` + item.atHtml + `</span><button class="delete-btn" title="Remove">✕</button>`;
           ul.appendChild(li);
         });
       } else {
@@ -2224,7 +2224,7 @@
       addBtn.addEventListener('click', () => {
         if (!isEditMode) return;
         const li = document.createElement('li');
-        li.innerHTML = \`<span class="drag-handle">⠿</span><span class="ai">✨</span><span class="at"><strong contenteditable="true" spellcheck="false">New activity</strong><span contenteditable="true" spellcheck="false">Add your description here</span></span><button class="delete-btn" title="Remove">✕</button>\`;
+        li.innerHTML = `<span class="drag-handle">⠿</span><span class="ai">✨</span><span class="at"><strong contenteditable="true" spellcheck="false">New activity</strong><span contenteditable="true" spellcheck="false">Add your description here</span></span><button class="delete-btn" title="Remove">✕</button>`;
         ul.appendChild(li);
         bindDrag(li);
         persistList(ul);
@@ -2265,11 +2265,11 @@
       wrapper.dataset.noteId = id;
 
       // X is saved as offset from center. Center it dynamically with calc()
-      wrapper.style.left = \`calc(50% + \` + (noteData.x - 18) + \`px)\`;
-      wrapper.style.top = \`\` + (noteData.y - 18) + \`px\`;
+      wrapper.style.left = `calc(50% + ` + (noteData.x - 18) + `px)`;
+      wrapper.style.top = `` + (noteData.y - 18) + `px`;
 
       // SVG pin icon for the bubble
-      wrapper.innerHTML = \`
+      wrapper.innerHTML = `
         <div class="note-bubble" title="Drag to move">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>
@@ -2280,12 +2280,12 @@
             <span class="note-author">Note</span>
             <button class="note-close" title="Collapse">×</button>
           </div>
-          <textarea class="note-textarea" placeholder="Type your note here…" \` + (!isEditMode ? 'readonly' : '') + \`>\` + (text || '') + \`</textarea>
+          <textarea class="note-textarea" placeholder="Type your note here…" ` + (!isEditMode ? 'readonly' : '') + `>` + (text || '') + `</textarea>
           <button class="note-delete-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:3px"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>Delete note
           </button>
         </div>
-      \`;
+      `;
 
       const bubble = wrapper.querySelector('.note-bubble');
       const textarea = wrapper.querySelector('.note-textarea');
@@ -2356,8 +2356,8 @@
         const newX = origX + dx;
         const newY = Math.max(18, origY + dy); // Keep above document top bounds
 
-        wrapper.style.left = \`calc(50% + \` + (newX - 18) + \`px)\`;
-        wrapper.style.top = \`\` + (newY - 18) + \`px\`;
+        wrapper.style.left = `calc(50% + ` + (newX - 18) + `px)`;
+        wrapper.style.top = `` + (newY - 18) + `px`;
       }
 
       function onMouseUp(e) {
@@ -2627,7 +2627,7 @@
               throw new Error(resData.message);
             }
           } else {
-            throw new Error(\`HTTP \` + response.status);
+            throw new Error(`HTTP ` + response.status);
           }
         } catch (err) {
           console.error('Failed to save locally:', err);
@@ -2648,10 +2648,10 @@
 
         try {
           // 1. Get SHA of existing data.json in the repository
-          const getUrl = \`https://api.github.com/repos/\` + repo + \`/contents/data.json?ref=\` + branch;
+          const getUrl = `https://api.github.com/repos/` + repo + `/contents/data.json?ref=` + branch;
           const getRes = await fetch(getUrl, {
             headers: {
-              'Authorization': \`token \` + token,
+              'Authorization': `token ` + token,
               'Accept': 'application/vnd.github.v3+json'
             }
           });
@@ -2661,11 +2661,11 @@
             const fileData = await getRes.json();
             sha = fileData.sha;
           } else if (getRes.status !== 404) {
-            throw new Error(\`Failed to fetch file metadata from GitHub (status \` + getRes.status + \`)\`);
+            throw new Error(`Failed to fetch file metadata from GitHub (status ` + getRes.status + `)`);
           }
 
           // 2. Commit updated data.json
-          const putUrl = \`https://api.github.com/repos/\` + repo + \`/contents/data.json\`;
+          const putUrl = `https://api.github.com/repos/` + repo + `/contents/data.json`;
 
           // Handle base64 encoding correctly supporting utf-8 characters
           const jsonString = JSON.stringify(state, null, 2);
@@ -2686,7 +2686,7 @@
           const putRes = await fetch(putUrl, {
             method: 'PUT',
             headers: {
-              'Authorization': \`token \` + token,
+              'Authorization': `token ` + token,
               'Content-Type': 'application/json',
               'Accept': 'application/vnd.github.v3+json'
             },
@@ -2700,7 +2700,7 @@
             showToast('Committed successfully! GitHub Pages will rebuild shortly (60s).');
           } else {
             const errData = await putRes.json();
-            throw new Error(errData.message || \`HTTP \` + putRes.status);
+            throw new Error(errData.message || `HTTP ` + putRes.status);
           }
         } catch (err) {
           console.error('Failed to commit to GitHub:', err);
