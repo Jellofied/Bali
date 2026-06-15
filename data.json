@@ -1,12 +1,33 @@
 {
-  "activities": {},
+  "activities": {
+    "al_0": [
+      {
+        "html": "<span class=\"ai\">✨</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"display: block; font-weight: 500; font-size: 13.5px; color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; background-color: rgb(255, 255, 255);\">Hyatt Sea Turtle Conservation — Boardwalk</span></strong><div class=\"maps-block\" data-map-id=\"map_al_0_1781542619056\" data-listener-bound=\"true\">\n          <span class=\"maps-label\">🗺️</span>\n          <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n          <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n        </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(90, 90, 90); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 12.5px; background-color: rgb(255, 255, 255);\">Walk 20 min north along the boardwalk to the Hyatt's beach turtle programme. View rescued and hatching sea turtles in care. June is nesting season — very active</span></span>"
+      },
+      {
+        "html": "<span class=\"ai\">🚶</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sanur Beachfront Boardwalk</strong><div class=\"maps-block\" data-map-id=\"map_al_0_0\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">5 km paved path lined with colourful jukung boats — Bali's\n                  most photogenic fishing boats. Walk north toward Sunrise Beach area.</span><span class=\"photo-badge\">📸 Photo: boats against Agung volcano backdrop</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🌅</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sanur Sunrise Beach Viewpoint</strong><div class=\"maps-block\" data-map-id=\"map_al_0_3\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Despite the name, beautiful at any time. Clear views of Nusa\n                  Penida and Mt. Agung. Perfect golden hour shot.</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🪁</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sindhu Beach Market</strong><div class=\"maps-block\" data-map-id=\"map_al_0_2\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">A small afternoon market near Jl. Danau Tamblingan selling local snacks, fresh\n                  coconut, batik wraps. Great intro to local life.</span>"
+      }
+    ]
+  },
   "notes": [],
   "textEdits": {
     "list_al_3": {
       "title_0": "no Temple needed"
     },
     "list_al_0": {
-      "title_0": "Sanur Beachfront Boardwalk"
+      "title_0": "Sanur Beachfront Boardwalk",
+      "title_3": "<span style=\"display: block; font-weight: 500; font-size: 13.5px; color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; background-color: rgb(255, 255, 255);\">Hyatt Sea Turtle Conservation — Boardwalk</span>",
+      "desc_3": "<span style=\"color: rgb(90, 90, 90); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 12.5px; background-color: rgb(255, 255, 255);\">Walk 20 min north along the boardwalk to the Hyatt's beach turtle programme. View rescued and hatching sea turtles in care. June is nesting season — very active</span>"
     },
     "transport": {
       "t_0": "<strong>Transport</strong>\n          Airport → Sanur: Pre-book a private cab or use Bluebird taxi (metered, most reliable). ~30–40 min, ~IDR\n          150–200k. Avoid touts inside arrivals. All Sanur activities are walkable along the 5 km beach boardwalk. Rent\n          bicycles (IDR 50k/day) from your hotel for easy exploration.\n        "
