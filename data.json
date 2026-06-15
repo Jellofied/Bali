@@ -50,7 +50,12 @@
     "list_al_4": {
       "title_0": "Besakih – Mother Temple of Bali",
       "title_1": "Sidemen Valley (drive-through)"
+    },
+    "list_al_1": {
+      "title_0": "Sidemen Valley"
     }
   },
-  "mapLinks": {}
+  "mapLinks": {
+    "day24": "https://www.google.com/maps/place/Besakih+Great+Temple/@-8.5594388,115.2567347,10.75z/data=!4m55!1m44!4m43!1m6!1m2!1s0x2dd241c1ce0912c1:0xf026af7177f0d541!2sSanur,+Bali,+Indonesia!2m2!1d115.2626236!2d-8.7071782!1m6!1m2!1s0x2dd211005819a78b:0xd52feb7a46817e16!2sPanorama+Sidemen,+Br+Dinas+Luah,+Sangkan+Gunung,+Sidemen,+Karangasem+Regency,+Bali+80864,+Indonesia!2m2!1d115.434963!2d-8.4765785!1m6!1m2!1s0x2dd21cbe3748b2b7:0xbfc39798cd1bb4a!2sBesakih+Great+Temple,+Besakih,+Rendang,+Karangasem+Regency,+Bali+80863,+Indonesia!2m2!1d115.4525567!2d-8.3739976!1m6!1m2!1s0x2dd24736f4379ad1:0x65af03b0d108a7d1!2sTirta+Gangga,+HHQQ%2B836,+Jalan+Raya+Abang+Desa+Adat+Jl.+Raya+Tirta+Gangga,+Ababi,+Abang,+Karangasem+Regency,+Bali+80852,+Indonesia!2m2!1d115.5872919!2d-8.4123473!1m6!1m2!1s0x2dd20876e3e79815:0xfc9ab3edaa5d11f2!2sTaman+Ujung,+Ujung+Water+Palace,+Tumbu,+Karangasem,+Karangasem+Regency,+Bali+80811,+Indonesia!2m2!1d115.6306692!2d-8.4630811!1m6!1m2!1s0x2dd241b7d35f0b21:0x5030bfbca830e40!2sSanur,+Denpasar+Selatan,+Denpasar+City,+Bali,+Indonesia!2m2!1d115.2636795!2d-8.6954715!3e0!3m9!1s0x2dd21cbe3748b2b7:0xbfc39798cd1bb4a!5m3!1s2026-06-16!4m1!1i2!8m2!3d-8.3739976!4d115.4525567!16zL20vMDc3ZDM4?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
+  }
 }
