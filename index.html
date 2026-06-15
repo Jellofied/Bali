@@ -3100,6 +3100,15 @@ function renderMapLinks() {
       }
     }
 
+    // Fix for outline remaining when clicking outside editable box
+    document.addEventListener('mousedown', (e) => {
+      const active = document.activeElement;
+      if (active && active.getAttribute('contenteditable') === 'true' && !active.contains(e.target)) {
+        active.blur();
+        window.getSelection().removeAllRanges();
+      }
+    });
+
     // Fire async initialization
     window.addEventListener('DOMContentLoaded', initApp);
   </script>
