@@ -27,6 +27,16 @@
         "html": "<span class=\"ai\">💦</span>",
         "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Tirta Gangga Water Palace</strong><div class=\"maps-block\" data-map-id=\"map_al_3_1\" data-listener-bound=\"true\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Former royal water palace with elegant stepped pools, giant\n                  koi fish, stone stepping paths, and lush gardens against a highland backdrop. Entry IDR 90k. You can\n                  swim in the bathing pools.</span>"
       }
+    ],
+    "al_1": [
+      {
+        "html": "<span class=\"ai\">✨</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Warung Mak Beng</span></strong><div class=\"maps-block\" data-map-id=\"map_al_1_1781547866263\">\n          <span class=\"maps-label\">🗺️</span>\n          <a href=\"https://www.google.com/maps/place/Warung+Mak+Beng/@-8.6810457,115.2623794,15.5z/data=!4m6!3m5!1s0x2dd240391d7662eb:0xec829958814b8d46!8m2!3d-8.6736666!4d115.2629784!16s%2Fg%2F1wjw92cn?entry=tts&amp;g_ep=EgoyMDI2MDYxMC4wIPu8ASoASAFQAw%3D%3D&amp;skid=f2d5d52b-775b-43df-b788-636ec4a7cdd1\" class=\"maps-link\" target=\"_blank\" style=\"\">View on Map</a>\n          <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n        </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(92, 92, 92);\">On the return route — one of Bali's most beautiful river valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for photos.</span></span>"
+      },
+      {
+        "html": "<span class=\"ai\">🔄</span>",
+        "atHtml": "\n                <strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Moreno Beach Bali</span></strong>\n                <div class=\"maps-block\" data-map-id=\"map_rest_1\">\n              <span class=\"maps-label\">🗺️ </span>\n              <a href=\"https://maps.app.goo.gl/6iQdPUmGVXtfFyWGA\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n              <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n            </div>\n                <br>\n                <span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Italian-Indonesian fusion right on the sand.\n                Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu\n                No.42</span>\n              "
+      }
     ]
   },
   "notes": [],
@@ -50,14 +60,15 @@
     },
     "list_al_4": {
       "title_0": "Besakih – Mother Temple of Bali",
-      "title_1": "Sidemen Valley (drive-through)",
-      "desc_0": "The holiest and largest temple complex on the slopes of Mt.\n                  Agung. Over 80 shrines. Entry IDR 150k. Hire an official guide inside (not the touts at entrance).\n                  Dress: full sarong + sash."
+      "title_1": "Sidemen Valley (drive-through)"
     },
     "list_al_1": {
       "title_0": "<span spellcheck=\"false\" data-editable=\"true\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-shadow: rgb(201, 168, 76) 0px 0px 0px 2px; display: block; font-size: 14px; color: rgb(26, 26, 26);\"><span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Warung Mak Beng</span></span>",
       "desc_0": "<span style=\"color: rgb(92, 92, 92);\">On the return route — one of Bali's most beautiful river valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for photos.</span>",
       "title_1": "<span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Moreno Beach Bali</span>",
-      "desc_1": "Italian-Indonesian fusion right on the sand.\n                Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu\n                No.42"
+      "desc_1": "Italian-Indonesian fusion right on the sand.\n                Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu\n                No.42",
+      "title_2": "<span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Warung Mak Beng</span>",
+      "desc_2": "<span style=\"color: rgb(92, 92, 92);\">On the return route — one of Bali's most beautiful river valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for photos.</span>"
     },
     "list_al_2": {
       "desc_1": "On the return route — one of Bali's most beautiful river\n                  valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for\n                  photos.",
@@ -82,6 +93,7 @@
     "map_al_0_3": "https://maps.app.goo.gl/6952Xk97daTrTu5WA",
     "map_al_0_2": "https://maps.app.goo.gl/14NwFB7SwezKirvt7",
     "map_rest_0": "https://maps.app.goo.gl/VtDmy566JLzqZMaT6",
-    "map_rest_1": "https://maps.app.goo.gl/6iQdPUmGVXtfFyWGA"
+    "map_rest_1": "https://maps.app.goo.gl/6iQdPUmGVXtfFyWGA",
+    "map_al_1_1781547866263": "https://www.google.com/maps/place/Warung+Mak+Beng/@-8.6810457,115.2623794,15.5z/data=!4m6!3m5!1s0x2dd240391d7662eb:0xec829958814b8d46!8m2!3d-8.6736666!4d115.2629784!16s%2Fg%2F1wjw92cn?entry=tts&g_ep=EgoyMDI2MDYxMC4wIPu8ASoASAFQAw%3D%3D&skid=f2d5d52b-775b-43df-b788-636ec4a7cdd1"
   }
 }
