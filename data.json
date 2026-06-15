@@ -52,7 +52,15 @@
       "title_1": "Sidemen Valley (drive-through)"
     },
     "list_al_1": {
-      "title_0": "Sidemen Valley"
+      "title_0": "Sidemen Valley",
+      "desc_0": "<span style=\"color: rgb(92, 92, 92);\">On the return route — one of Bali's most beautiful river valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for photos.</span>",
+      "title_1": "Besakih Great Temple"
+    },
+    "list_al_2": {
+      "desc_1": "On the return route — one of Bali's most beautiful river\n                  valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for\n                  photos.",
+      "title_0": "Tirta Gangga",
+      "title_1": "Taman Ujung",
+      "desc_0": "The holiest and largest temple complex on the slopes of Mt.\n                  Agung. Over 80 shrines. Entry IDR 150k. Hire an official guide inside (not the touts at entrance).\n                  Dress: full sarong + sash."
     }
   },
   "mapLinks": {
