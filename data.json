@@ -216,6 +216,24 @@
     "list_al_26": {
       "title_0": "Ku De Ta / Merah Putih",
       "title_1": "Sarong Restaurant"
+    },
+    "list_al_27": {
+      "title_0": "Ayodya Spa",
+      "title_1": "Surf Lesson at Kuta Beach",
+      "desc_1": "Kuta is the best beginner surf beach in Bali. Lessons IDR\n                  200–350k including board (1.5 hr). Great activity for the 22 and 18-year-olds. Multiple surf schools\n                  on the beach.",
+      "title_2": "Benoa Marine Park Snorkel"
+    },
+    "list_al_28": {
+      "title_0": "Kuta Beach &amp; Legian Walk",
+      "title_1": "Petitenget Beach Sunset",
+      "title_2": "Kuta / Legian Last-Minute Shopping"
+    },
+    "list_al_29": {
+      "title_0": "Naughty Nuri's Warung",
+      "title_1": "Motel Mexicola"
+    },
+    "list_al_30": {
+      "title_0": "Sundara Beach Club, Four Seasons Jimbaran"
     }
   },
   "mapLinks": {
@@ -284,6 +302,16 @@
     "map_rest_20": "https://maps.app.goo.gl/6jtx1Y31VjqroCKB8",
     "map_rest_21": "https://maps.app.goo.gl/wkN7CE1GfJAnCgL29",
     "map_rest_22": "https://maps.app.goo.gl/pQDSpzm7nJ16p3188",
-    "map_rest_23": "https://maps.app.goo.gl/Zg3E1TD16CXpxMje8"
+    "map_rest_23": "https://maps.app.goo.gl/Zg3E1TD16CXpxMje8",
+    "map_al_27_0": "https://maps.app.goo.gl/UDrnFPPvW6ZD2MWJ9",
+    "map_al_27_1": "https://maps.app.goo.gl/73YFeHDanfwQJFPXA",
+    "map_al_27_2": "https://maps.app.goo.gl/PTxjRH2i2YAdQyTV6",
+    "map_al_28_0": "https://maps.app.goo.gl/sRSnFZzmYcRzWEpo8",
+    "map_al_28_1": "https://maps.app.goo.gl/2N2QKCYndWU4TAkH7",
+    "map_al_28_2": "https://maps.app.goo.gl/rdA5LqE2ZkqAsGrKA",
+    "map_rest_24": "https://maps.app.goo.gl/BWQj1R6666KBrqMTA",
+    "map_rest_25": "https://maps.app.goo.gl/4d5Pz4zSWdBFPadGA",
+    "map_rest_98": "https://maps.app.goo.gl/ZUfdQf4QJ9t2nD939",
+    "map_rest_26": "https://maps.app.goo.gl/NszYkcLSMZJK5kvr6"
   }
 }
