@@ -68,6 +68,12 @@
         "html": "<span class=\"ai\">💙</span>",
         "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Blue Lagoon, Ceningan</strong><div class=\"maps-block\" data-map-id=\"map_al_8_1\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/u9Gyc4xmRUj2DXjE9\" class=\"maps-link\" target=\"_blank\" style=\"\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Brilliant turquoise cove with cliff jump platforms. Cafe above for drinks with the\n                  view (Klyf Club has a stunning terrace).</span>"
       }
+    ],
+    "al_18": [
+      {
+        "html": "<span class=\"ai\">🍛</span>",
+        "atHtml": "\n                <strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Locavore</strong>\n                <div class=\"maps-block\" data-map-id=\"map_rest_17\">\n              <span class=\"maps-label\">🗺️ </span>\n              <a href=\"#\" class=\"maps-link placeholder\" target=\"_blank\">Add Map Link</a>\n              <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n            </div>\n                <br>\n                <span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Award-winning fine dining using only\n              Balinese local ingredients. Tasting menu. Special occasion dinner. Book 2–3 weeks ahead.</span>\n              "
+      }
     ]
   },
   "notes": [],
@@ -85,7 +91,8 @@
     },
     "transport": {
       "t_0": "<strong>Transport</strong>\n          Airport → Sanur: Pre-book a private cab or use Bluebird taxi (metered, most reliable). ~30–40 min, ~IDR\n          150–200k. Avoid touts inside arrivals. All Sanur activities are walkable along the 5 km beach boardwalk. Rent\n          bicycles (IDR 50k/day) from your hotel for easy exploration.\n        ",
-      "t_2": "<strong>Hired Private Car &amp; Driver (full day)</strong>\n          Hire from hotel or Klook/GetYourGuide. Full day east Bali circuit: IDR 600–800k. Route: Sanur → Lempuyang (2.5\n          hrs) → Tirta Gangga (20 min from Lempuyang) → Besakih (1 hr from Tirta Gangga) → optional Sidemen Valley →\n          back to Sanur. ~200 km round trip. Driver handles parking; you focus on photography.\n        "
+      "t_2": "<strong>Hired Private Car &amp; Driver (full day)</strong>\n          Hire from hotel or Klook/GetYourGuide. Full day east Bali circuit: IDR 600–800k. Route: Sanur → Lempuyang (2.5\n          hrs) → Tirta Gangga (20 min from Lempuyang) → Besakih (1 hr from Tirta Gangga) → optional Sidemen Valley →\n          back to Sanur. ~200 km round trip. Driver handles parking; you focus on photography.\n        ",
+      "t_5": "<strong>Hired Car: Ubud → Jatiluwih → Nusa Dua</strong>\n          Full day hire: IDR 700–900k. Route: Ubud → Jatiluwih Rice Terraces (1.5 hr) → Tanah Lot area for lunch →\n          Uluwatu Temple (2 hr drive south) → Jimbaran Bay dinner → Nusa Dua hotel check-in. Note: Grab/Gojek cannot\n          enter Jatiluwih; private car essential.\n        "
     },
     "tipbox": {
       "tip_0": "\n        <strong>📍 Arrival Note</strong>\n        Check in, freshen up. Sanur is the perfect relaxed entry into Bali — calm beach, no surf crowds, great food. The\n        famous 5 km beachfront boardwalk links everything.\n      ",
@@ -158,6 +165,38 @@
     "list_al_14": {
       "title_0": "Kecak Fire Dance at Ubud Palace",
       "title_1": "Donna Restaurant (Post-Show)"
+    },
+    "list_al_15": {
+      "title_0": "Campuhan Ridge Walk",
+      "title_1": "Sacred Monkey Forest Sanctuary",
+      "title_2": "Ubud Museum Puri Lukisan"
+    },
+    "list_al_16": {
+      "title_0": "Taman Ayun Royal Temple",
+      "title_1": "Tanah Lot Temple – Sunset"
+    },
+    "list_al_17": {
+      "title_0": "Karsa Kafe (post-ridge walk)",
+      "title_1": "Warung Teges"
+    },
+    "list_al_18": {
+      "title_0": "Bridges Bali",
+      "desc_0": "Restaurant literally built over the Campuhan\n              river gorge. Dramatic setting, candlelit, international &amp; Balinese menu. Excellent for a celebratory\n              family dinner. Book ahead.",
+      "title_1": "Locavore"
+    },
+    "list_al_19": {
+      "title_0": "Jatiluwih Rice Terraces",
+      "title_1": "Pura Luhur Batukaru"
+    },
+    "list_al_20": {
+      "title_0": "Uluwatu Temple &amp; Cliff Walk",
+      "title_1": "Kecak Fire Dance at Uluwatu"
+    },
+    "list_al_21": {
+      "title_0": "Jatiluwih Restaurant"
+    },
+    "list_al_22": {
+      "title_0": "Jimbaran Bay Seafood Cafes"
     }
   },
   "mapLinks": {
@@ -201,6 +240,22 @@
     "map_al_12_2": "https://maps.app.goo.gl/AcULAm9GjoNozoze7",
     "map_al_12_1": "https://maps.app.goo.gl/yUbMu8Cfrz7WNVAD7",
     "map_rest_99": "https://maps.app.goo.gl/bYYp8Mt4xB9Mcmmb8",
-    "map_rest_13": "https://maps.app.goo.gl/n6SQHNVrwa7xh3XH9"
+    "map_rest_13": "https://maps.app.goo.gl/n6SQHNVrwa7xh3XH9",
+    "day27": "https://www.google.com/maps/dir/Villa+Ubud+Sunshine,+F7R5%2B3WF,+Jl.+Bisma,+Ubud,+Gianyar,+Gianyar+Regency,+Bali+80571,+Indonesia/Campuhan+Ridge+Walk,+Jl.+Raya+Ubud,+Kelusa,+Payangan,+Gianyar+Regency,+Bali,+Indonesia/Sacred+Monkey+Forest+Sanctuary,+Jl.+Monkey+Forest,+Ubud,+Gianyar+Regency,+Bali+80571,+Indonesia/Museum+Puri+Lukisan,+Jl.+Raya+Ubud,+Ubud,+Gianyar+Regency,+Bali+80571,+Indonesia/Taman+Ayun+Temple,+Jl.+Ayodya+No.10,+Mengwi,+Badung+Regency,+Bali+80351,+Indonesia/Tanah+Lot+Temple+Square,+93MP%2B8QC,+Jl.+Tanah+Lot,+Beraban,+Kediri,+Tabanan+Regency,+Bali+82121,+Indonesia/@-8.567813,115.1029665,11.49z/data=!4m38!4m37!1m5!1m1!1s0x2dd23d14b6a9ebc3:0x88f2a0b6b55f34d7!2m2!1d115.2597308!2d-8.5097772!1m5!1m1!1s0x2dd23d6bcaf473f5:0x7c13fd74aa1bc49f!2m2!1d115.2547579!2d-8.5035806!1m5!1m1!1s0x2dd23d43f6189b67:0xb6ec43164befc356!2m2!1d115.2606299!2d-8.5193727!1m5!1m1!1s0x2dd23d6aac844e31:0x1cf8abb996ec8402!2m2!1d115.2602997!2d-8.505242!1m5!1m1!1s0x2dd23b90db7a4001:0xaf262ff28fc4caed!2m2!1d115.1724843!2d-8.5418425!1m5!1m1!1s0x2dd237e3af29ad05:0xf016a40354096ede!2m2!1d115.0868991!2d-8.6166989!3e0?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+    "map_al_15_0": "https://maps.app.goo.gl/i4rzc9yVgA6jBEkV8",
+    "map_al_15_1": "https://maps.app.goo.gl/XDNKQievzm6k1YDH9",
+    "map_al_15_2": "https://maps.app.goo.gl/9meisTki7jmNmCLu5",
+    "map_al_16_0": "https://maps.app.goo.gl/36pRkFPDtSjcdAEy6",
+    "map_al_16_1": "https://maps.app.goo.gl/2Hgdf2bVirnu128JA",
+    "map_rest_14": "https://maps.app.goo.gl/QruRiKMCLx9thLLR6",
+    "map_rest_15": "https://maps.app.goo.gl/sGybZFBX52R7BfHy5",
+    "map_rest_17": "https://maps.app.goo.gl/6rGo3atM6Ksr9PLD9",
+    "day28": "https://www.google.com/maps/dir/Villa+Ubud+Sunshine,+F7R5%2B3WF,+Jl.+Bisma,+Ubud,+Gianyar,+Gianyar+Regency,+Bali+80571,+Indonesia/Jatiluwih+Rice+Terraces,+Jl.+Jatiluwih+Kawan,+Jatiluwih,+Penebel,+Tabanan+Regency,+Bali+82152,+Indonesia/Luhur+Batukau+Temple,+Jl.+Penatahan+-+Wongayagede,+Wongaya+Gede,+Penebel,+Tabanan+Regency,+Bali+85125,+Indonesia/Uluwatu+Temple,+Pecatu,+South+Kuta,+Badung+Regency,+Bali,+Indonesia/Kecak+Uluwatu,+Kawasan+parkir+Pura+Uluwatu,+Jl.+Uluwatu,+Pecatu,+South+Kuta,+Badung+Regency,+Bali+80361,+Indonesia/THE+AYODYA+PALACE,+BALI,+Jl.+Pantai+Mengiat+Jl.+Raya+Nusa+Dua+Selatan,+Benoa,+South+Kuta,+Badung+Regency,+Bali+80363,+Indonesia/@-8.7841753,115.081553,11z/data=!4m38!4m37!1m5!1m1!1s0x2dd23d14b6a9ebc3:0x88f2a0b6b55f34d7!2m2!1d115.2597308!2d-8.5097772!1m5!1m1!1s0x2dd227ab020cd7fb:0x2f0f875ff3e6839a!2m2!1d115.1312269!2d-8.3700942!1m5!1m1!1s0x2dd240a56f674049:0xce1977e67dd5fb85!2m2!1d115.1025803!2d-8.3720075!1m5!1m1!1s0x2dd24ffc20cb8191:0xcb98d1ba7db0495!2m2!1d115.0849069!2d-8.8291432!1m5!1m1!1s0x2dd2500503808f13:0x34326abe297b8d24!2m2!1d115.0854093!2d-8.8305729!1m5!1m1!1s0x2dd2432c4d2425f9:0x1a8e2aa760f59f48!2m2!1d115.2302943!2d-8.8101066!3e0?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+    "map_al_19_0": "https://maps.app.goo.gl/drYmmuYc6uXiJxTe9",
+    "map_al_19_1": "https://maps.app.goo.gl/1AgFCyr1wjw7Pwgo8",
+    "map_al_20_0": "https://maps.app.goo.gl/z1n1MgE9fdvFSsG2A",
+    "map_al_20_1": "https://maps.app.goo.gl/yQcb3amV9VXUUb1W6",
+    "map_rest_18": "https://maps.app.goo.gl/CjJLLmVAxYHGRCF88",
+    "map_rest_19": "https://maps.app.goo.gl/hvJAXG2dN345498a7"
   }
 }
