@@ -197,6 +197,25 @@
     },
     "list_al_22": {
       "title_0": "Jimbaran Bay Seafood Cafes"
+    },
+    "list_al_23": {
+      "title_0": "Nusa Dua Beach",
+      "title_1": "Water Blow, Nusa Dua",
+      "title_2": "Bali Collection Mall"
+    },
+    "list_al_24": {
+      "title_0": "Garuda Wisnu Kencana (GWK) Cultural Park",
+      "title_1": "Seminyak – Late Afternoon Browse",
+      "desc_1": "Bali's hippest neighbourhood: Jl. Kayu Aya (Eat Street),\n                  boutique stores, designer Bali home goods. If the family wants nightlife/cocktails — rooftop bars\n                  along Jl. Petitenget."
+    },
+    "list_al_25": {
+      "title_0": "Nusa Indonesian Gastronomy",
+      "desc_0": "Inside Bali Collection. Exceptional\n              presentation of Indonesian island cuisines — try the Makassar coto soup, West Sumatra rendang, Javanese\n              gudeg alongside Balinese dishes.",
+      "title_1": "The Patio at Ayodya"
+    },
+    "list_al_26": {
+      "title_0": "Ku De Ta / Merah Putih",
+      "title_1": "Sarong Restaurant"
     }
   },
   "mapLinks": {
@@ -256,6 +275,15 @@
     "map_al_20_0": "https://maps.app.goo.gl/z1n1MgE9fdvFSsG2A",
     "map_al_20_1": "https://maps.app.goo.gl/yQcb3amV9VXUUb1W6",
     "map_rest_18": "https://maps.app.goo.gl/CjJLLmVAxYHGRCF88",
-    "map_rest_19": "https://maps.app.goo.gl/hvJAXG2dN345498a7"
+    "map_rest_19": "https://maps.app.goo.gl/hvJAXG2dN345498a7",
+    "map_al_23_0": "https://maps.app.goo.gl/jZoCLLgzyL9vEauS8",
+    "map_al_23_1": "https://maps.app.goo.gl/4dy6TUahnXkLfUnu7",
+    "map_al_23_2": "https://maps.app.goo.gl/ad4UuRxVj1ameFrw6",
+    "map_al_24_0": "https://maps.app.goo.gl/fu2fasg3F3XDcY7f7",
+    "map_al_24_1": "https://maps.app.goo.gl/ucEHCbTMSMjrH7Kz8",
+    "map_rest_20": "https://maps.app.goo.gl/6jtx1Y31VjqroCKB8",
+    "map_rest_21": "https://maps.app.goo.gl/wkN7CE1GfJAnCgL29",
+    "map_rest_22": "https://maps.app.goo.gl/pQDSpzm7nJ16p3188",
+    "map_rest_23": "https://maps.app.goo.gl/Zg3E1TD16CXpxMje8"
   }
 }
