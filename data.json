@@ -88,6 +88,12 @@
         "html": "<span class=\"ai\">🛍️</span>",
         "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Bali Collection Mall</strong><div class=\"maps-block\" data-map-id=\"map_al_23_2\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/ad4UuRxVj1ameFrw6\" class=\"maps-link\" target=\"_blank\" style=\"\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">The upscale open-air shopping centre within the Nusa Dua zone. Good for souvenirs,\n                  clothing, last-minute gifts, and air-conditioned cool.</span>"
       }
+    ],
+    "al_24": [
+      {
+        "html": "<span class=\"ai\">🦅</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Garuda Wisnu Kencana (GWK) Cultural Park</strong><div class=\"maps-block\" data-map-id=\"map_al_24_0\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/fu2fasg3F3XDcY7f7\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">The 121 m tall Garuda Wisnu statue — tallest in the world.\n                  Stunning views across southern Bali. Cultural performances, traditional dance shows, photography\n                  zones. Entry IDR 150k adults. 2–3 hours. Don't miss the guided climb into the statue.</span><span class=\"photo-badge\">📸 Massive statue against Bali skyline</span>"
+      }
     ]
   },
   "notes": [],
