@@ -37,6 +37,37 @@
         "html": "<span class=\"ai\">🔄</span>",
         "atHtml": "\n                <strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 13.5px; font-weight: 500; background-color: rgb(255, 255, 255);\">Moreno Beach Bali</span></strong>\n                <div class=\"maps-block\" data-map-id=\"map_rest_1\">\n              <span class=\"maps-label\">🗺️ </span>\n              <a href=\"https://maps.app.goo.gl/6iQdPUmGVXtfFyWGA\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n              <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n            </div>\n                <br>\n                <span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Italian-Indonesian fusion right on the sand.\n                Great for arriving weary travellers who want to ease in gently. Pasta, fresh barramundi. Jl. Segara Ayu\n                No.42</span>\n              "
       }
+    ],
+    "al_5": [
+      {
+        "html": "<span class=\"ai\">🌿</span>",
+        "atHtml": "\n                <strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Breakfast Panorama Sidemen</strong>\n                <div class=\"maps-block\" data-map-id=\"map_rest_9\">\n              <span class=\"maps-label\">🗺️ </span>\n              <a href=\"https://maps.app.goo.gl/vQaZpQvNnHDbvGaM9\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n              <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n            </div>\n                <br>\n                <span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">On the Sidemen road with rice terrace views.\n              Local Balinese cuisine, cold beer, shaded terrace. Great rest stop.</span>\n              "
+      }
+    ],
+    "al_6": [],
+    "al_7": [
+      {
+        "html": "<span class=\"ai\">🌊</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Devil's Tear</strong><div class=\"maps-block\" data-map-id=\"map_al_7_0\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/uD7z8zaRd2eHJMWv5\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Dramatic cliff where waves crash violently into a natural channel, spraying 15 m\n                  into the air. Sunrise or early morning best. Most iconic spot on Lembongan.</span><span class=\"photo-badge\">📸 Photo: wave spray silhouette shot</span>"
+      },
+      {
+        "html": "<span class=\"ai\">✨</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Sandy Bay Beach Club</strong><div class=\"maps-block\" data-map-id=\"map_al_7_1781601416547\">\n          <span class=\"maps-label\">🗺️</span>\n          <a href=\"https://maps.app.goo.gl/j74U8M5jhkJj8FMd9\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n          <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n        </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Add your description here</span>"
+      },
+      {
+        "html": "<span class=\"ai\">🌿</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Mangrove Forest</strong><div class=\"maps-block\" data-map-id=\"map_al_7_1\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/2ZShSKqrkPeGq3ZTA\" class=\"maps-link\" target=\"_blank\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Glide through emerald mangrove tunnels by canoe or small boat. Serene, otherworldly\n                  green light.</span>"
+      }
+    ],
+    "al_8": [
+      {
+        "html": "<span class=\"ai\">✨</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(26, 26, 26); font-size: 14px;\">Snorkelling – Crystal Bay / Mangrove Bay</span></strong><div class=\"maps-block\" data-map-id=\"map_al_8_1781601778938\">\n          <span class=\"maps-label\">🗺️</span>\n          <a href=\"https://maps.app.goo.gl/6A7dpxoAryW2U9XF9\" class=\"maps-link\" target=\"_blank\" style=\"\">View on Map</a>\n          <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n        </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\"><span style=\"color: rgb(92, 92, 92);\">Brilliant coral with clownfish, turtles &amp; if lucky — Manta Rays. Rent snorkel gear from any beach shack (IDR 50k). For Mantas, go to Manta Point via boat tour.</span></span>"
+      },
+      {
+        "html": "<span class=\"ai\">💙</span>",
+        "atHtml": "<strong contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Blue Lagoon, Ceningan</strong><div class=\"maps-block\" data-map-id=\"map_al_8_1\">\n            <span class=\"maps-label\">🗺️</span>\n            <a href=\"https://maps.app.goo.gl/u9Gyc4xmRUj2DXjE9\" class=\"maps-link\" target=\"_blank\" style=\"\">View on Map</a>\n            <button class=\"maps-edit-btn\" title=\"Edit Map Link\">✏️</button>\n          </div><br><span contenteditable=\"true\" spellcheck=\"false\" data-editable=\"true\">Brilliant turquoise cove with cliff jump platforms. Cafe above for drinks with the\n                  view (Klyf Club has a stunning terrace).</span>"
+      }
     ]
   },
   "notes": [],
@@ -62,8 +93,8 @@
     },
     "list_al_4": {
       "title_0": "Besakih – Mother Temple of Bali",
-      "title_1": "Sidemen Valley (drive-through)",
-      "desc_1": "On the return route — one of Bali's most beautiful river\n                  valleys with lush terraced rice fields. Ask driver to stop at Pura Kehen viewpoint for\n                  photos.",
+      "title_1": "<span style=\"display: block; font-weight: 500; font-size: 13.5px; color: rgb(28, 28, 28); font-family: &quot;DM Sans&quot;, sans-serif; background-color: rgb(255, 255, 255);\">Taman Ujung Water Palace</span>",
+      "desc_1": "<span style=\"color: rgb(90, 90, 90); font-family: &quot;DM Sans&quot;, sans-serif; font-size: 12.5px; background-color: rgb(255, 255, 255);\">Built by the same king as Tirta Gangga — equally beautiful, far less visited. Massive ornamental ponds with stone bridges, Mount Agung backdrop, and views of the Lombok Strait from the upper terrace. Entry IDR 100k. Only 20 min drive from Tirta Gangga.</span>",
       "desc_0": "The holiest and largest temple complex on the slopes of Mt.\n                  Agung. Over 80 shrines. Entry IDR 150k. Hire an official guide inside (not the touts at entrance).\n                  Dress: full sarong + sash."
     },
     "list_al_1": {
@@ -84,7 +115,32 @@
       "r_1": "Bali's most legendary warung. Only one menu\n                — crispy fried fish, spicy fish soup, sambal &amp; rice. IDR 55k/person. Queue expected; arrive by 12:30\n                or after 2 PM. Jl. Hang Tuah No.45"
     },
     "list_al_5": {
-      "title_1": "Panorama Sidemen"
+      "title_1": "Breakfast Panorama Sidemen",
+      "title_0": "Warung Stana Angga"
+    },
+    "list_al_6": {
+      "title_0": "Chez Gado Gado / Massimo",
+      "title_1": "Bebek Bengil (Dirty Duck)",
+      "desc_0": "Massimo on Danau Tamblingan: beloved\n              Italian-Balinese with excellent gelato. Or try Char Ming for French Balinese fusion — great grilled\n              seafood."
+    },
+    "list_al_7": {
+      "title_3": "Sandy Bay Beach Club",
+      "title_2": "Snorkelling – Crystal Bay / Mangrove Bay",
+      "desc_2": "Brilliant coral with clownfish, turtles &amp; if lucky —\n                  Manta Rays. Rent snorkel gear from any beach shack (IDR 50k). For Mantas, go to Manta Point via boat\n                  tour."
+    },
+    "list_al_8": {
+      "title_0": "<span spellcheck=\"false\" data-editable=\"true\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-shadow: rgb(201, 168, 76) 0px 0px 0px 2px; display: block; font-size: 14px; color: rgb(26, 26, 26);\">Snorkelling – Crystal Bay / Mangrove Bay</span>",
+      "desc_0": "<span style=\"color: rgb(92, 92, 92);\">Brilliant coral with clownfish, turtles &amp; if lucky — Manta Rays. Rent snorkel gear from any beach shack (IDR 50k). For Mantas, go to Manta Point via boat tour.</span>",
+      "title_3": "<span style=\"color: rgb(26, 26, 26); font-size: 14px;\">Snorkelling – Crystal Bay / Mangrove Bay</span>",
+      "desc_3": "<span style=\"color: rgb(92, 92, 92);\">Brilliant coral with clownfish, turtles &amp; if lucky — Manta Rays. Rent snorkel gear from any beach shack (IDR 50k). For Mantas, go to Manta Point via boat tour.</span>"
+    },
+    "list_al_9": {
+      "title_1": "The Deck Café"
+    },
+    "list_al_10": {
+      "title_0": "Three Monkeys Café",
+      "title_1": "Pregina Warung",
+      "desc_0": "Chilled garden setting, live music evenings,\n              great grilled meats and Indonesian fare. Very popular with families.&nbsp;"
     }
   },
   "mapLinks": {
@@ -109,6 +165,15 @@
     "map_al_4_0": "https://maps.app.goo.gl/hDX6aRhakKAB2MZV9",
     "map_al_4_1": "https://maps.app.goo.gl/XLwbbBb5bJFD3zSV7",
     "map_al_3_1781600632931": "https://maps.app.goo.gl/JLYsGBHNLrTo18JE8",
-    "map_rest_9": "https://maps.app.goo.gl/vQaZpQvNnHDbvGaM9"
+    "map_rest_9": "https://maps.app.goo.gl/vQaZpQvNnHDbvGaM9",
+    "map_al_7_1781601416547": "https://maps.app.goo.gl/j74U8M5jhkJj8FMd9",
+    "map_al_7_0": "https://maps.app.goo.gl/uD7z8zaRd2eHJMWv5",
+    "map_al_7_1": "https://maps.app.goo.gl/2ZShSKqrkPeGq3ZTA",
+    "map_al_8_1781601778938": "https://maps.app.goo.gl/6A7dpxoAryW2U9XF9",
+    "map_al_8_1": "https://maps.app.goo.gl/u9Gyc4xmRUj2DXjE9",
+    "map_rest_4": "https://maps.app.goo.gl/j74U8M5jhkJj8FMd9",
+    "map_rest_5": "https://maps.app.goo.gl/okrB87cGjqu9sXYZ9",
+    "map_rest_6": "https://maps.app.goo.gl/PR8YdCxwufHDDX4B7",
+    "map_rest_7": "https://maps.app.goo.gl/TnNmxCKGVdWSMp1s9"
   }
 }
